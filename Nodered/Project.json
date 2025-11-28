@@ -1,0 +1,2501 @@
+[
+    {
+        "id": "2625a6b5189e9357",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5d6032a696f7cf51",
+        "type": "tab",
+        "label": "General",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "10a701fbc2276735",
+        "type": "tab",
+        "label": "Lista_Ricette",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "auto_manual_tab",
+        "type": "tab",
+        "label": "Auto_Manuale_Ricetta",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bc701828e987025b",
+        "type": "tab",
+        "label": "Influx Writer",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b0f0000000000001",
+        "type": "tab",
+        "label": "Write Diametro to Influx v2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "443748a78dccc0cb",
+        "type": "group",
+        "z": "5d6032a696f7cf51",
+        "name": "Gauge",
+        "style": {
+            "fill": "#92d04f",
+            "label": true,
+            "label-position": "s",
+            "color": "#000000"
+        },
+        "nodes": [
+            "dec7b582ba648d39",
+            "4a2cfd98e05c9e3c",
+            "4eacd1d26ff033e5",
+            "bf71c19758b1c119",
+            "f12eea5b59fbf877",
+            "f8054a24f6d35754",
+            "08739efab54d27cd",
+            "b661091e04df38bc"
+        ],
+        "x": 274,
+        "y": 79,
+        "w": 992,
+        "h": 230
+    },
+    {
+        "id": "b2ed0587e3a99b48",
+        "type": "group",
+        "z": "5d6032a696f7cf51",
+        "name": "Tabella",
+        "style": {
+            "fill": "#3f93cf",
+            "label": true,
+            "label-position": "s",
+            "color": "#001f60"
+        },
+        "nodes": [
+            "f68f76c08da04e2c",
+            "162cc1593609602b",
+            "8af30c257a69473d",
+            "86ae14ba2ea2c39c"
+        ],
+        "x": 294,
+        "y": 379,
+        "w": 772,
+        "h": 90
+    },
+    {
+        "id": "2eea7963b2d88a97",
+        "type": "group",
+        "z": "5d6032a696f7cf51",
+        "name": "Cause Scarto",
+        "style": {
+            "fill": "#ffdf7f",
+            "fill-opacity": "0.69",
+            "label": true,
+            "label-position": "s"
+        },
+        "nodes": [
+            "53c2df7933f92784",
+            "fbcac8aef56dd37c",
+            "b7ac2b24edb55cf3",
+            "a3e630c9887aa90d"
+        ],
+        "x": 254,
+        "y": 519,
+        "w": 892,
+        "h": 90
+    },
+    {
+        "id": "63a5110b22a71baa",
+        "type": "group",
+        "z": "5d6032a696f7cf51",
+        "name": "Buoni &Scarti",
+        "style": {
+            "fill": "#bfdbef",
+            "fill-opacity": "0.84",
+            "label": true,
+            "label-position": "s"
+        },
+        "nodes": [
+            "counter_inject",
+            "counter_sql",
+            "split_counts",
+            "ui_good",
+            "ui_bad",
+            "dba7ea454a13c57d"
+        ],
+        "x": 254,
+        "y": 679,
+        "w": 1082,
+        "h": 330
+    },
+    {
+        "id": "c159de230a023ca0",
+        "type": "group",
+        "z": "5d6032a696f7cf51",
+        "name": "Gaussiana",
+        "style": {
+            "fill": "#ffdf7f",
+            "label": true,
+            "label-position": "s",
+            "color": "#000000"
+        },
+        "nodes": [],
+        "x": 794,
+        "y": 859,
+        "w": 75,
+        "h": 48
+    },
+    {
+        "id": "fad80af144686a98",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "Vision PC 1",
+        "server": "172.31.10.210",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "sensureanalisi_TecnoPack_CRM_Modena_Piadine",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "61e00e3b9e563430",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "d8c9d88e352092b0",
+        "type": "ui-theme",
+        "name": "dark",
+        "colors": {
+            "surface": "#1e1e1e",
+            "primary": "#0094ce",
+            "bgPage": "#1e1e1e",
+            "groupBg": "#1e1e1e",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "9ab7d29972708871",
+        "type": "ui-page",
+        "name": "Produzione Live",
+        "ui": "61e00e3b9e563430",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "d8c9d88e352092b0",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a121da03faab8ab2",
+        "type": "ui-group",
+        "name": "Vision Monitor",
+        "page": "9ab7d29972708871",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0f16cd6220cdfabb",
+        "type": "ui-group",
+        "name": "Storico Produzione",
+        "page": "9ab7d29972708871",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cb4be6e64ee64dbf",
+        "type": "MSSQL-CN",
+        "name": "Vision MSSQL",
+        "server": "172.31.10.210",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "sensureanalisi_TecnoPack_CRM_Modena_Piadine",
+        "useUTC": true,
+        "connectTimeout": "",
+        "requestTimeout": "",
+        "cancelTimeout": "",
+        "pool": "",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "fc4854e678a5b7fb",
+        "type": "influxdb",
+        "hostname": "10.86.120.11",
+        "port": 8086,
+        "protocol": "http",
+        "database": "piadine",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://10.86.120.11:8086",
+        "timeout": 10,
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "0c87664425b2c2ae",
+        "type": "debug",
+        "z": "2625a6b5189e9357",
+        "name": "Debug Function",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d3babec7049ead64",
+        "type": "inject",
+        "z": "2625a6b5189e9357",
+        "name": "Aggiorna Gauss",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 550,
+        "y": 420,
+        "wires": [
+            [
+                "b16101ece6a94667"
+            ]
+        ]
+    },
+    {
+        "id": "67d89e33822fc27b",
+        "type": "function",
+        "z": "2625a6b5189e9357",
+        "name": "Calcola Gauss + Istogramma",
+        "func": "// 1. Controllo sicurezza se il payload è vuoto\nconst arr = Array.isArray(msg.payload) ? msg.payload : [];\n\n// 2. Filtra i valori validi\nconst values = arr.map(v => Number(v.ValoreDiametro)).filter(n => Number.isFinite(n) && n > 0);\n\n// DEBUG: Scrive nella console di Node-RED quanti dati ha trovato\nnode.warn(\"Dati trovati per Gaussiana: \" + values.length);\n\nif (values.length === 0) {\n  node.warn(\"Nessun dato trovato nelle ultime 2 ore per la ricetta corrente.\");\n  return null; // Esce se non ci sono dati\n}\n\n// 3. Parametri statistici\nconst step = 0.5; // Larghezza barre\nconst n = values.length;\nconst mean = values.reduce((a, b) => a + b, 0) / n;\nconst variance = values.reduce((a, b) => a + (b - mean) ** 2, 0) / n;\nconst sigma = Math.sqrt(variance) || 1; // Evita divisione per zero\n\n// 4. Calcolo range (Minimo e Massimo)\nconst min = Math.min(...values);\nconst max = Math.max(...values);\n// Allarghiamo un po' il grafico a sinistra e destra\nconst start = Math.floor(min / step) * step - step;\nconst end = Math.ceil(max / step) * step + step;\n\nconst labels = [];\nconst hist = [];\n\n// 5. Inizializza i bucket dell'istogramma a 0\nfor (let x = start; x <= end + 0.001; x += step) {\n  labels.push(x.toFixed(1)); // Etichetta asse X (es: \"180.5\")\n  hist.push(0);\n}\n\n// 6. Riempie i bucket con i dati reali\nfor (const v of values) {\n  // Trova l'indice corrispondente al valore\n  const idx = Math.floor((v - start) / step);\n  if (idx >= 0 && idx < hist.length) hist[idx]++;\n}\n\n// 7. Prepara i dati finali per il grafico\nconst chartData = [];\n\nlabels.forEach((l, i) => {\n  const xVal = l;\n  const xNum = parseFloat(l);\n\n  // Calcolo Curva Gaussiana Teoretica\n  let yGauss = (1 / (sigma * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * ((xNum - mean) / sigma) ** 2);\n  yGauss = yGauss * n * step; // Adatta l'altezza della curva all'istogramma\n\n  // Serie 1: Istogramma (Barre)\n  chartData.push({\n    \"series\": \"Reale\",\n    \"x\": xVal,\n    \"y\": hist[i]\n  });\n\n  // Serie 2: Gaussiana (Curva)\n  chartData.push({\n    \"series\": \"Ideale\",\n    \"x\": xVal,\n    \"y\": Number(yGauss.toFixed(2))\n  });\n});\n\nmsg.payload = chartData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 380,
+        "wires": [
+            [
+                "chart-clean-noerror"
+            ]
+        ]
+    },
+    {
+        "id": "b16101ece6a94667",
+        "type": "MSSQL",
+        "z": "2625a6b5189e9357",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Raw Data 2h",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT\n    TRY_CAST(\n        REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.')\n    AS FLOAT) * 2 AS ValoreDiametro\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(HOUR, -2, GETDATE())\n  AND TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) > 0\nORDER BY DateTime ASC;\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 790,
+        "y": 380,
+        "wires": [
+            [
+                "67d89e33822fc27b"
+            ]
+        ]
+    },
+    {
+        "id": "chart-clean-noerror",
+        "type": "ui-chart",
+        "z": "2625a6b5189e9357",
+        "group": "a121da03faab8ab2",
+        "name": "Distribuzione Diametro (2h)",
+        "label": "Gaussiana Diametro (Ultime 2h)",
+        "order": 7,
+        "chartType": "bar",
+        "category": "labels",
+        "categoryType": "msg",
+        "xAxisLabel": "Diametro (mm)",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "category",
+        "xAxisFormat": "auto",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Frequenza",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": "",
+        "stackSeries": false,
+        "pointRadius": "",
+        "showLegend": true,
+        "removeOlder": "0",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ffffff",
+            "#ffff00",
+            "#ffff00",
+            "#ff9900",
+            "#ff9900",
+            "#ff6666",
+            "#ff6666"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 9,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1400,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1767b33eec81c03",
+        "type": "debug",
+        "z": "2625a6b5189e9357",
+        "name": "Debug SQLquery",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "7cc49291286684f7",
+        "type": "debug",
+        "z": "2625a6b5189e9357",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "dec7b582ba648d39",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "4eacd1d26ff033e5"
+            ]
+        ]
+    },
+    {
+        "id": "4a2cfd98e05c9e3c",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "name": "function 1",
+        "func": "if (!msg.payload || msg.payload.length === 0) return null;\n\n// La query restituisce una stringa formattata, es: \"214.50\"\n// Il Gauge vuole un numero puro.\nvar valoreStringa = msg.payload[0].MediaOggi;\n\n// Se il server SQL è in italiano potrebbe mandare la virgola, la gestiamo:\nif (typeof valoreStringa === 'string') {\n    valoreStringa = valoreStringa.replace(',', '.');\n}\n\nmsg.payload = Number(parseFloat(valoreStringa).toFixed(2));\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 120,
+        "wires": [
+            [
+                "bf71c19758b1c119"
+            ]
+        ]
+    },
+    {
+        "id": "4eacd1d26ff033e5",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "mssqlCN": "fad80af144686a98",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT \n    AVG(\n        NULLIF(\n            TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT),\n            0\n        )\n    ) * 2 AS MediaUltimo\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(MINUTE, -1, GETDATE());\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "4a2cfd98e05c9e3c"
+            ]
+        ]
+    },
+    {
+        "id": "bf71c19758b1c119",
+        "type": "ui-gauge",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "name": "",
+        "group": "a121da03faab8ab2",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Diametro Medio Ultimo Minuto (mm)",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "140",
+                "color": "#fc0133",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "205",
+                "color": "#00ff1e",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "235",
+                "color": "#ff9600",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "280",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "140",
+        "max": "280",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1090,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f12eea5b59fbf877",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "08739efab54d27cd"
+            ]
+        ]
+    },
+    {
+        "id": "f8054a24f6d35754",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "name": "function 2",
+        "func": "if (!msg.payload || msg.payload.length === 0) return null;\n\n// La query restituisce una stringa formattata, es: \"214.50\"\n// Il Gauge vuole un numero puro.\nvar valoreStringa = msg.payload[0].MediaOggi;\n\n// Se il server SQL è in italiano potrebbe mandare la virgola, la gestiamo:\nif (typeof valoreStringa === 'string') {\n    valoreStringa = valoreStringa.replace(',', '.');\n}\n\nmsg.payload = Number(parseFloat(valoreStringa).toFixed(2));\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 260,
+        "wires": [
+            [
+                "b661091e04df38bc"
+            ]
+        ]
+    },
+    {
+        "id": "08739efab54d27cd",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "mssqlCN": "fad80af144686a98",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT \n    AVG(\n        NULLIF(\n            TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT),\n            0\n        )\n    ) * 2 AS MediaOggi\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= CAST(GETDATE() AS DATE);\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "f8054a24f6d35754"
+            ]
+        ]
+    },
+    {
+        "id": "b661091e04df38bc",
+        "type": "ui-gauge",
+        "z": "5d6032a696f7cf51",
+        "g": "443748a78dccc0cb",
+        "name": "",
+        "group": "a121da03faab8ab2",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Diametro Medio Produzione (mm)",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "140",
+                "color": "#fc0133",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "205",
+                "color": "#00ff1e",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "235",
+                "color": "#ff9600",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "280",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "140",
+        "max": "280",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1100,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f68f76c08da04e2c",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "g": "b2ed0587e3a99b48",
+        "mssqlCN": "fad80af144686a98",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT  \n    CAST(DateTime AS DATE) AS Giorno,\n    ReceiptName AS Ricetta,\n\n    SUM(TRY_CAST(GoodProduct AS FLOAT)) AS Buoni,\n    SUM(TRY_CAST(BadProduct AS FLOAT)) AS Scarti,\n\n    (SUM(TRY_CAST(BadProduct AS FLOAT)) * 100.0) /\n    NULLIF(SUM(TRY_CAST(GoodProduct AS FLOAT)) + SUM(TRY_CAST(BadProduct AS FLOAT)), 0)\n        AS Percentuale_Scarto,\n\n    AVG(\n        TRY_CAST(\n            REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') \n        AS FLOAT)\n    ) * 2 AS Diametro_Medio\n\nFROM DataAnalysis\nWHERE DateTime >= DATEADD(day, -10, GETDATE())\nGROUP BY CAST(DateTime AS DATE), ReceiptName\nORDER BY Giorno DESC, Ricetta ASC;\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "86ae14ba2ea2c39c"
+            ]
+        ]
+    },
+    {
+        "id": "162cc1593609602b",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "g": "b2ed0587e3a99b48",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 420,
+        "wires": [
+            [
+                "f68f76c08da04e2c"
+            ]
+        ]
+    },
+    {
+        "id": "8af30c257a69473d",
+        "type": "ui-table",
+        "z": "5d6032a696f7cf51",
+        "g": "b2ed0587e3a99b48",
+        "group": "0f16cd6220cdfabb",
+        "name": "",
+        "label": "",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": false,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "📅 Data",
+                "key": "Giorno",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "🧾 Ricetta",
+                "key": "Ricetta",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "✅ Buoni",
+                "key": "Buoni",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "❌ Scarti",
+                "key": "Scarti",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "⚠️ % Scarto",
+                "key": "Percentuale",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "center"
+            },
+            {
+                "title": "Ø Medio",
+                "key": "DiametroMedio",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "end"
+            }
+        ],
+        "mobileBreakpoint": "lg",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 990,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53c2df7933f92784",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "g": "2eea7963b2d88a97",
+        "name": "Clock 1m",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "fbcac8aef56dd37c"
+            ]
+        ]
+    },
+    {
+        "id": "fbcac8aef56dd37c",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "g": "2eea7963b2d88a97",
+        "mssqlCN": "fad80af144686a98",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT\n    SUM(TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature0,'$',''),'#',''),',','.') AS FLOAT)) AS Area,\n    SUM(TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature2,'$',''),'#',''),',','.') AS FLOAT)) AS Raggio,\n    SUM(TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature3,'$',''),'#',''),',','.') AS FLOAT)) AS Rotondita,\n    SUM(TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature14,'$',''),'#',''),',','.') AS FLOAT)) AS Buchi\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(DAY, -30, GETDATE());\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 580,
+        "y": 560,
+        "wires": [
+            [
+                "b7ac2b24edb55cf3"
+            ]
+        ]
+    },
+    {
+        "id": "b7ac2b24edb55cf3",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "g": "2eea7963b2d88a97",
+        "name": "Formatta per Chart 2.0",
+        "func": "if (!msg.payload || msg.payload.length === 0) return null;\nvar d = msg.payload[0];\n\nmsg.payload = [\n  { series: \"Scarti\", x: \"Area\", y: d.Area || 0 },\n  { series: \"Scarti\", x: \"Raggio\", y: d.Raggio || 0 },\n  { series: \"Scarti\", x: \"Rotondità\", y: d.Rotondita || 0 },\n  { series: \"Scarti\", x: \"Buchi\", y: d.Buchi || 0 }\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 560,
+        "wires": [
+            [
+                "a3e630c9887aa90d"
+            ]
+        ]
+    },
+    {
+        "id": "a3e630c9887aa90d",
+        "type": "ui-chart",
+        "z": "5d6032a696f7cf51",
+        "g": "2eea7963b2d88a97",
+        "group": "a121da03faab8ab2",
+        "name": "Cause Scarto (30gg)",
+        "label": "Cause Scarto (Ultimi 30gg)",
+        "order": 4,
+        "chartType": "bar",
+        "category": "series",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "replace",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#cccccc"
+        ],
+        "textColorDefault": false,
+        "gridColor": [
+            "#444444"
+        ],
+        "gridColorDefault": false,
+        "width": 6,
+        "height": "6",
+        "className": "",
+        "interpolation": "linear",
+        "x": 1020,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "counter_inject",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "g": "63a5110b22a71baa",
+        "name": "Aggiorna Contatori",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "counter_sql"
+            ]
+        ]
+    },
+    {
+        "id": "counter_sql",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "g": "63a5110b22a71baa",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Prodotti Oggi",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT\n    SUM(TRY_CAST(GoodProduct AS FLOAT)) AS Buoni_Oggi,\n    SUM(TRY_CAST(BadProduct AS FLOAT)) AS Scarti_Oggi\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= CAST(GETDATE() AS DATE);\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 650,
+        "y": 740,
+        "wires": [
+            [
+                "split_counts",
+                "dba7ea454a13c57d"
+            ]
+        ]
+    },
+    {
+        "id": "split_counts",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "g": "63a5110b22a71baa",
+        "name": "Formatta Numeri",
+        "func": "if (!msg.payload || msg.payload.length === 0) return [null, null];\n\nvar d = msg.payload[0];\nvar buoni = d.Buoni_Oggi || 0;\nvar scarti = d.Scarti_Oggi || 0;\n\n// Uscita 1: Manda solo il numero dei Buoni (per il nodo Text verde)\nvar msgBuoni = { payload: buoni };\n\n// Uscita 2: Manda solo il numero degli Scarti (per il nodo Text rosso)\nvar msgScarti = { payload: scarti };\n\n// Restituisce due messaggi separati alle due uscite\nreturn [msgBuoni, msgScarti];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 740,
+        "wires": [
+            [
+                "ui_good"
+            ],
+            [
+                "ui_bad"
+            ]
+        ]
+    },
+    {
+        "id": "ui_good",
+        "type": "ui-text",
+        "z": "5d6032a696f7cf51",
+        "g": "63a5110b22a71baa",
+        "group": "a121da03faab8ab2",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "✅ Prodotti Buoni",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 24,
+        "color": "#4caf50",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1110,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ui_bad",
+        "type": "ui-text",
+        "z": "5d6032a696f7cf51",
+        "g": "63a5110b22a71baa",
+        "group": "a121da03faab8ab2",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "❌ Scarti Oggi",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 24,
+        "color": "#f44336",
+        "className": "",
+        "x": 1100,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "inject_1min",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "d": true,
+        "name": "Ogni 60s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 450,
+        "y": 1120,
+        "wires": [
+            [
+                "cafa2b075a71bbb2"
+            ]
+        ]
+    },
+    {
+        "id": "prepare_diametro",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "Format Diametro",
+        "func": "var d = msg.payload[0] || {};\nmsg.payload = {\n    measurement: \"diametro\",\n    fields: {\n        value: d.Diametro || 0\n    },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "prepare_buoni",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "Format Buoni",
+        "func": "var d = msg.payload[0] || {};\nmsg.payload = {\n    measurement: \"produzione\",\n    fields: {\n        buoni: d.Buoni || 0\n    },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 930,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "prepare_scarti",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "Format Scarti",
+        "func": "var d = msg.payload[0] || {};\nmsg.payload = {\n    measurement: \"scarti\",\n    fields: {\n        scarti: d.Scarti || 0\n    },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 930,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cafa2b075a71bbb2",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Leggi ultimi dati SENSURE",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT TOP 1\r\n    DateTime,\r\n    TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) * 2 AS Diametro,\r\n    TRY_CAST(GoodProduct AS FLOAT) AS Buoni,\r\n    TRY_CAST(BadProduct AS FLOAT) AS Scarti\r\nFROM DataAnalysis\r\nWHERE ReceiptName = 'CLASSICA 180mm'\r\nORDER BY DateTime DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 680,
+        "y": 1120,
+        "wires": [
+            [
+                "prepare_diametro",
+                "prepare_buoni",
+                "prepare_scarti"
+            ]
+        ]
+    },
+    {
+        "id": "d3f32915d98dbd5b",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "function 4",
+        "func": "msg.measurement = \"test1\";\nmsg.payload = {\n    value: Math.random()\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86ae14ba2ea2c39c",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "g": "b2ed0587e3a99b48",
+        "name": "function 3",
+        "func": "if (!msg.payload || msg.payload.length === 0) return null;\n\nmsg.payload = msg.payload.map(row => {\n    const buoni = Number(row.Buoni || 0);\n    const scarti = Number(row.Scarti || 0);\n    const perc = Number(row.Percentuale_Scarto || 0);\n    const diam = Number(row.Diametro_Medio || 0);\n\n    return {\n        Giorno: row.Giorno,                          // es: 2025-11-26\n        Ricetta: row.Ricetta,                        // es: CLASSICA 230mm\n        Buoni: buoni,                                // numero secco\n        Scarti: scarti,                              // numero secco\n        Percentuale: perc.toFixed(2) + \" %\",         // stringa formattata\n        DiametroMedio: diam ? diam.toFixed(2) + \" mm\" : \"-\"  // mm con 2 decimali\n    };\n});\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 420,
+        "wires": [
+            [
+                "8af30c257a69473d"
+            ]
+        ]
+    },
+    {
+        "id": "e6b2a775533847ea",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "d": true,
+        "name": "Aggiorna Gauss",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 430,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5734894364f14d5b",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Raw Data 2h",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT\n    DateTime,\n    TRY_CAST(\n        REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.')\n    AS FLOAT) * 2 AS ValoreDiametro\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(HOUR, -2, GETDATE())\n  AND TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) > 0\n-- Non serve ORDER BY per Influx, ma male non fa\nORDER BY DateTime ASC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 710,
+        "y": 1380,
+        "wires": [
+            [
+                "a4853009e7a419b8"
+            ]
+        ]
+    },
+    {
+        "id": "dfd5fad229317be4",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "Normalizza x InfluxDB",
+        "func": "var lines = [];\nvar ricettaRaw = global.get(\"ricetta\") || \"Manuale\";\nvar ricettaSafe = ricettaRaw.replace(/\\s+/g, '_');\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    var row = msg.payload[i];\n\n    if (row.ValoreDiametro == null) continue;\n\n    var val = parseFloat(row.ValoreDiametro);\n    if (isNaN(val)) continue;\n\n    var timestamp = new Date(row.DateTime).getTime();\n\n    lines.push({\n        measurement: \"controllo_qualita\",\n        tags: {\n            ricetta: ricettaSafe,\n            parametro: \"diametro\"\n        },\n        fields: {\n            valore: val\n        },\n        timestamp: timestamp\n        \n    });\n}\n\nmsg.payload = lines;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4853009e7a419b8",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "Genera Line Protocol (Testo)",
+        "func": "var points = [];\nvar ricettaRaw = global.get(\"ricetta\") || flow.get(\"ricetta\") || \"Manuale\";\nvar ricettaSafe = String(ricettaRaw).replace(/\\s+/g, \"_\");\nfor (var i = 0; i < msg.payload.length; i++) {\n  var row = msg.payload[i];\n  if (row.ValoreDiametro == null) continue;\n  var val = parseFloat(row.ValoreDiametro);\n  if (isNaN(val)) continue;\n  var iso = (row.DateTime || \"\").toString().replace(\" \", \"T\");\n  var ts = Date.parse(iso);\n  if (isNaN(ts)) ts = Date.now();\n  points.push({ measurement: \"controllo_qualita\", tags: { ricetta: ricettaSafe, parametro: \"diametro\" }, fields: { valore: val }, timestamp: ts });\n}\nmsg.payload = points;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c102afd0b8d6dfe",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "Genera Payload Corretto",
+        "func": "var ricettaRaw = global.get(\"ricetta\") || flow.get(\"ricetta\") || \"Manuale\";\nvar ricettaSafe = String(ricettaRaw).replace(/\\s+/g, \"_\");\n\nvar lines = [];\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    var row = msg.payload[i];\n    if (row.ValoreDiametro == null) continue;\n    var val = parseFloat(row.ValoreDiametro);\n    if (isNaN(val)) continue;\n\n    var ts = new Date(row.DateTime).getTime();\n    if (isNaN(ts)) ts = Date.now();\n\n    // Formato Line Protocol di InfluxDB\n    var line = \"controllo_qualita,ricetta=\" + ricettaSafe + \",parametro=diametro valore=\" + val + \" \" + ts;\n    lines.push(line);\n}\n\nmsg.payload = lines;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37e6c949591301cd",
+        "type": "MSSQL",
+        "z": "5d6032a696f7cf51",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Raw Data 2h",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT\n    DateTime,\n    TRY_CAST(\n        REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.')\n    AS FLOAT) * 2 AS ValoreDiametro\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(HOUR, -2, GETDATE())\n  AND TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) > 0\n-- Non serve ORDER BY per Influx, ma male non fa\nORDER BY DateTime ASC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 610,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5d4c7db281bcc36",
+        "type": "inject",
+        "z": "5d6032a696f7cf51",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 420,
+        "y": 1640,
+        "wires": [
+            [
+                "37e6c949591301cd"
+            ]
+        ]
+    },
+    {
+        "id": "5c11673fba67b7e1",
+        "type": "function",
+        "z": "5d6032a696f7cf51",
+        "name": "function 5",
+        "func": "msg.payload = [\n    \"controllo_qualita,ricetta=TEST,parametro=diametro valore=123 1700000000000\"\n];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1640,
+        "wires": [
+            [
+                "5d3310f9eb9e1bc6"
+            ]
+        ]
+    },
+    {
+        "id": "5d3310f9eb9e1bc6",
+        "type": "influxdb out",
+        "z": "5d6032a696f7cf51",
+        "influxdb": "fc4854e678a5b7fb",
+        "name": "",
+        "measurement": "controllo_qualita",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "sensure",
+        "bucket": "piadine",
+        "x": 1360,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "dba7ea454a13c57d",
+        "type": "debug",
+        "z": "5d6032a696f7cf51",
+        "g": "63a5110b22a71baa",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "init_recipes",
+        "type": "inject",
+        "z": "10a701fbc2276735",
+        "d": true,
+        "name": "Init Ricette",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "get_recipes_sql"
+            ]
+        ]
+    },
+    {
+        "id": "get_recipes_sql",
+        "type": "MSSQL",
+        "z": "10a701fbc2276735",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Lista Ricette",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT DISTINCT ReceiptName FROM DataAnalysis ORDER BY ReceiptName ASC",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "format_dropdown",
+                "aadd13c9db122a0e"
+            ]
+        ]
+    },
+    {
+        "id": "format_dropdown",
+        "type": "function",
+        "z": "10a701fbc2276735",
+        "name": "Formatta Menu",
+        "func": "// Crea l'array per il menu a tendina Dashboard 2.0\nvar options = msg.payload.map(function(row) {\n    return {\n        label: row.ReceiptName,\n        value: row.ReceiptName\n    };\n});\n\n// Imposta le opzioni\nmsg.options = options;\n\n// Nessun default qui: la ricetta iniziale è gestita dalla logica AUTO\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 80,
+        "wires": [
+            [
+                "set_flow_var"
+            ]
+        ]
+    },
+    {
+        "id": "ui_recipe_selector",
+        "type": "ui-dropdown",
+        "z": "10a701fbc2276735",
+        "group": "a121da03faab8ab2",
+        "name": "Selettore Ricetta",
+        "label": "Seleziona Ricetta:",
+        "tooltip": "",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 850,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "set_flow_var",
+        "type": "change",
+        "z": "10a701fbc2276735",
+        "name": "Salva Variabile (Manuale)",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ricetta_user",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "manual_until",
+                "pt": "flow",
+                "to": "$millis() + 10*60*1000",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 160,
+        "wires": [
+            [
+                "trigger_updates"
+            ]
+        ]
+    },
+    {
+        "id": "trigger_updates",
+        "type": "link out",
+        "z": "10a701fbc2276735",
+        "name": "AggiornaGrafici",
+        "mode": "link",
+        "links": [],
+        "x": 1215,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "512dc962f1dc520f",
+        "type": "debug",
+        "z": "10a701fbc2276735",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "aadd13c9db122a0e",
+        "type": "function",
+        "z": "10a701fbc2276735",
+        "name": "function 7",
+        "func": "let lines = msg.payload.map(r => {\n    return `ricette name=\"${r.ReceiptName.replace(/\"/g, '')}\"`;\n});\n\nmsg.payload = lines.join(\"\\n\");\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 200,
+        "wires": [
+            [
+                "512dc962f1dc520f"
+            ]
+        ]
+    },
+    {
+        "id": "auto_inject",
+        "type": "inject",
+        "z": "auto_manual_tab",
+        "name": "Auto-Detect Ricetta (1m)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 260,
+        "y": 120,
+        "wires": [
+            [
+                "auto_query"
+            ]
+        ]
+    },
+    {
+        "id": "auto_query",
+        "type": "MSSQL",
+        "z": "auto_manual_tab",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Ricetta Oggi (Auto)",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT TOP 1 ReceiptName\nFROM DataAnalysis\nWHERE DateTime >= CAST(GETDATE() AS DATE)\n  AND TRY_CAST(GoodProduct AS FLOAT) > 0\nORDER BY DateTime DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": false,
+        "params": [],
+        "x": 520,
+        "y": 120,
+        "wires": [
+            [
+                "auto_logic"
+            ]
+        ]
+    },
+    {
+        "id": "auto_logic",
+        "type": "function",
+        "z": "auto_manual_tab",
+        "name": "Aggiorna ricetta automatica",
+        "func": "// Legge la ricetta dall'ultima riga prodotta oggi\nif (!msg.payload || msg.payload.length === 0) {\n    return null;\n}\n\nlet ricetta = msg.payload[0].ReceiptName;\nlet ricettaCorrente = global.get('ricetta');\n\n// Se è cambiata, la aggiorno\nif (ricetta && ricetta !== ricettaCorrente) {\n    global.set('ricetta', ricetta);\n    global.set('ricetta_auto', ricetta);   // utile anche per debug / Influx tag\n    node.warn(\"AUTO: ricetta aggiornata → \" + ricetta);\n}\n\n// Non devo mandare niente in giro, i grafici si aggiornano già coi loro timer\nreturn null;\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ef62b67c08faa3b9",
+        "type": "inject",
+        "z": "bc701828e987025b",
+        "d": true,
+        "name": "Ogni 60s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "b174d66c68d91d5a"
+            ]
+        ]
+    },
+    {
+        "id": "1d6e6622ba3fa649",
+        "type": "MSSQL",
+        "z": "bc701828e987025b",
+        "mssqlCN": "cb4be6e64ee64dbf",
+        "name": "Leggi Ultimo Record Vision",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT TOP 1\n    DateTime,\n    TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) * 2 AS Diametro,\n    TRY_CAST(GoodProduct AS FLOAT) AS Buoni,\n    TRY_CAST(BadProduct AS FLOAT) AS Scarti,\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature0,'$',''),'#',''),',','.') AS FLOAT) AS Area,\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature2,'$',''),'#',''),',','.') AS FLOAT) AS Raggio,\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature3,'$',''),'#',''),',','.') AS FLOAT) AS Rotondita,\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature14,'$',''),'#',''),',','.') AS FLOAT) AS Buchi\nFROM DataAnalysis\nWHERE ReceiptName = '{{{flow.ricetta}}}'\nORDER BY DateTime DESC;",
+        "modeOpt": "",
+        "modeOptType": "query",
+        "queryOpt": "",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 240,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89be4c4567c4c5db",
+        "type": "function",
+        "z": "bc701828e987025b",
+        "name": "Format Diametro",
+        "func": "var d = msg.payload[0] || {};\n\nmsg.payload = {\n    measurement: \"diametro\",\n    tags: { ricetta: flow.get('ricetta') || \"\" },\n    fields: { value: d.Diametro || 0 },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 740,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04782d9143182f07",
+        "type": "function",
+        "z": "bc701828e987025b",
+        "name": "Format Buoni",
+        "func": "var d = msg.payload[0] || {};\n\nmsg.payload = {\n    measurement: \"produzione\",\n    tags: { ricetta: flow.get('ricetta') || \"\" },\n    fields: { buoni: d.Buoni || 0 },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 740,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0148475a3eb19914",
+        "type": "function",
+        "z": "bc701828e987025b",
+        "name": "Format Scarti",
+        "func": "var d = msg.payload[0] || {};\n\nmsg.payload = {\n    measurement: \"scarti\",\n    tags: { ricetta: flow.get('ricetta') || \"\" },\n    fields: { scarti: d.Scarti || 0 },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 740,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73d037dffd57c615",
+        "type": "function",
+        "z": "bc701828e987025b",
+        "name": "Format Difetti",
+        "func": "var d = msg.payload[0] || {};\n\nmsg.payload = {\n    measurement: \"difetti\",\n    tags: { ricetta: flow.get('ricetta') || \"\" },\n    fields: {\n        area: d.Area || 0,\n        raggio: d.Raggio || 0,\n        rotondita: d.Rotondita || 0,\n        buchi: d.Buchi || 0\n    },\n    timestamp: new Date(d.DateTime)\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 750,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5591b5eef52282ea",
+        "type": "debug",
+        "z": "bc701828e987025b",
+        "name": "SQL Output",
+        "active": true,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 760,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "59a14a02ebc96dd5",
+        "type": "debug",
+        "z": "bc701828e987025b",
+        "name": "Influx Payload",
+        "active": false,
+        "tosidebar": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1050,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b174d66c68d91d5a",
+        "type": "MSSQL",
+        "z": "bc701828e987025b",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Leggi ultimi dati SENSURE",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT TOP 1\r\n    DateTime,\r\n    TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) * 2 AS Diametro,\r\n    TRY_CAST(GoodProduct AS FLOAT) AS Buoni,\r\n    TRY_CAST(BadProduct AS FLOAT) AS Scarti,\r\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature0,'$',''),'#',''),',','.') AS FLOAT) AS Area,\r\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature2,'$',''),'#',''),',','.') AS FLOAT) AS Raggio,\r\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature3,'$',''),'#',''),',','.') AS FLOAT) AS Rotondita,\r\n    TRY_CAST(REPLACE(REPLACE(REPLACE(WasteFeature14,'$',''),'#',''),',','.') AS FLOAT) AS Buchi\r\nFROM DataAnalysis\r\nWHERE ReceiptName = '{{{flow.ricetta}}}'\r\nORDER BY DateTime DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "89be4c4567c4c5db",
+                "04782d9143182f07",
+                "0148475a3eb19914",
+                "73d037dffd57c615"
+            ]
+        ]
+    },
+    {
+        "id": "inj_gauss",
+        "type": "inject",
+        "z": "b0f0000000000001",
+        "d": true,
+        "name": "Aggiorna Gauss ogni 60s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "mssql_gauss"
+            ]
+        ]
+    },
+    {
+        "id": "mssql_gauss",
+        "type": "MSSQL",
+        "z": "b0f0000000000001",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Raw Data 2h",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT\n    DateTime,\n    TRY_CAST(\n        REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.')\n    AS FLOAT) * 2 AS ValoreDiametro\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(HOUR, -2, GETDATE())\n  AND TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) > 0\nORDER BY DateTime ASC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "fn_build_lp",
+                "048152c85262799e"
+            ]
+        ]
+    },
+    {
+        "id": "fn_build_lp",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Format Diametro → Line Protocol",
+        "func": "var ricettaSafe = global.get(\"ricetta\") || \"Manuale\";\nricettaSafe = String(ricettaSafe).replace(/\\s+/g, \"_\");\n\nlet out = [];\n\nfor (let row of msg.payload) {\n\n    if (row.ValoreDiametro === null || row.ValoreDiametro === undefined) continue;\n\n    let val = parseFloat(row.ValoreDiametro);\n    if (isNaN(val)) continue;\n\n    let ts = new Date(row.DateTime).getTime();\n    if (isNaN(ts)) continue;\n\n    let lp = `controllo_qualita,ricetta=${ricettaSafe},parametro=diametro valore=${val} ${ts}`;\n\n    out.push({ payload: lp });\n}\n\nnode.status({ text: \"Punti: \" + out.length });\nreturn [out];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 100,
+        "wires": [
+            [
+                "http_influx_write"
+            ]
+        ]
+    },
+    {
+        "id": "dbg_lp",
+        "type": "debug",
+        "z": "b0f0000000000001",
+        "name": "LP verso Influx",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "http_influx_write",
+        "type": "http request",
+        "z": "b0f0000000000001",
+        "name": "POST → InfluxDB 2.7 /api/v2/write",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://10.86.120.11:8086/api/v2/write?org=sensure&bucket=piadine&precision=ms",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Authorization",
+                "valueType": "other",
+                "valueValue": "Token jBG2Kccmt_K-vPIMKnev3Xp08M6mgAVAlbXZEJDvC_owBcdwp3r4Lie-a-6ZUSaxnNQxznl_Nf2gjGTpt1JOAw=="
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "text/plain; charset=utf-8"
+            }
+        ],
+        "x": 1130,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbg_http",
+        "type": "debug",
+        "z": "b0f0000000000001",
+        "name": "Risposta Influx",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "statusCode",
+        "targetType": "msg",
+        "x": 1380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0422d74b2eeb2a37",
+        "type": "debug",
+        "z": "b0f0000000000001",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "jsonata",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b75d68aa5c0a826e",
+        "type": "catch",
+        "z": "b0f0000000000001",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 1010,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90ca308cd9af0419",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "function 6",
+        "func": "msg.payload = \"controllo_qualita,ricetta=TEST,parametro=diametro valore=123 1700000000000\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "048152c85262799e",
+        "type": "debug",
+        "z": "b0f0000000000001",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c452bdaef601b14c",
+        "type": "inject",
+        "z": "b0f0000000000001",
+        "name": "Ogni 60s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 5,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 210,
+        "y": 700,
+        "wires": [
+            [
+                "7a8383fb3e60c2f5"
+            ]
+        ]
+    },
+    {
+        "id": "71be55def0b98ee3",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Normalize + Deduplica",
+        "func": "let ricetta = global.get(\"ricetta\") || \"Manuale\";\nricetta = String(ricetta).replace(/\\s+/g, \"_\");\n\nlet rows = Array.isArray(msg.payload) ? [...msg.payload] : [];\n\n// filtro valori validi\nrows = rows.filter(r =>\n    r.ValoreDiametro != null &&\n    !isNaN(parseFloat(r.ValoreDiametro)) &&\n    !isNaN(new Date(r.DateTime).getTime())\n);\n\n// sort sicuro\nrows.sort((a, b) => {\n    let ta = new Date(a.DateTime).getTime();\n    let tb = new Date(b.DateTime).getTime();\n    return ta - tb;\n});\n\n// rimozione duplicati\nlet unique = [];\nlet seen = new Set();\n\nfor (let r of rows) {\n    let ts = new Date(r.DateTime).getTime();\n    if (seen.has(ts)) continue;\n    seen.add(ts);\n    unique.push(r);\n}\n\nnode.warn(\"Punti validi: \" + unique.length);\nlet m = {};\nfor (let r of unique) {\n    let ts = new Date(r.DateTime).getTime();\n    m[ts] = (m[ts] || 0) + 1;\n}\n\nlet duplicates = Object.entries(m).filter(([,count]) => count > 1);\nnode.warn(\"Duplicati: \" + duplicates.length);\n\nmsg.payload = { ricetta, points: unique };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 700,
+        "wires": [
+            [
+                "3bd9256beb3c1ff6"
+            ]
+        ]
+    },
+    {
+        "id": "3bd9256beb3c1ff6",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Build LP Batch",
+        "func": "const ricetta = msg.payload.ricetta;\nconst points = msg.payload.points;\n\nlet batches = [];\nlet batch = [];\nlet BATCH_SIZE = 5000;\n\nfor (let p of points) {\n    let ts = new Date(p.DateTime).getTime();\n    let v = parseFloat(p.ValoreDiametro);\n\n    let line = `controllo_qualita,ricetta=${ricetta},parametro=diametro valore=${v} ${ts}`;\n    batch.push(line);\n\n    if (batch.length >= BATCH_SIZE) {\n        batches.push(batch.join(\"\\n\"));\n        batch = [];\n    }\n}\n\nif (batch.length > 0) batches.push(batch.join(\"\\n\"));\n\nnode.warn(\"Batch creati: \" + batches.length);\n\nreturn [batches.map(b => ({ payload: b }))];",
+        "outputs": 1,
+        "x": 980,
+        "y": 700,
+        "wires": [
+            [
+                "be34e1f2a795f8ae"
+            ]
+        ]
+    },
+    {
+        "id": "be34e1f2a795f8ae",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Save orig payload",
+        "func": "msg._originalPayload = msg.payload;\nmsg.retry = 0;\nreturn msg;",
+        "outputs": 1,
+        "x": 1220,
+        "y": 700,
+        "wires": [
+            [
+                "840be486914eaeee"
+            ]
+        ]
+    },
+    {
+        "id": "840be486914eaeee",
+        "type": "http request",
+        "z": "b0f0000000000001",
+        "name": "POST → InfluxDB 2.7",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://10.86.120.11:8086/api/v2/write?org=sensure&bucket=piadine&precision=ms",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Authorization",
+                "valueType": "other",
+                "valueValue": "Token jBG2Kccmt_K-vPIMKnev3Xp08M6mgAVAlbXZEJDvC_owBcdwp3r4Lie-a-6ZUSaxnNQxznl_Nf2gjGTpt1JOAw=="
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "text/plain; charset=utf-8"
+            }
+        ],
+        "x": 1460,
+        "y": 700,
+        "wires": [
+            [
+                "e57c2f460fdd5bb6"
+            ]
+        ]
+    },
+    {
+        "id": "e57c2f460fdd5bb6",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Retry 5x su errori",
+        "func": "let status = msg.statusCode || 0;\n\nif (status === 204) {\n    node.status({fill:\"green\", shape:\"dot\", text:\"OK\"});\n    return msg;\n}\n\nif ([429, 500, 503].includes(status)) {\n    let retry = msg.retry || 0;\n    if (retry < 5) {\n        node.warn(`Influx occupato → retry #${retry + 1}`);\n        return [{\n            payload: msg._originalPayload,\n            _originalPayload: msg._originalPayload,\n            retry: retry + 1\n        }];\n    }\n    node.error(\"Fallito dopo 5 tentativi!\", msg);\n    return null;\n}\n\nnode.error(\"Errore Influx: \" + status, msg);\nreturn null;",
+        "outputs": 1,
+        "x": 1700,
+        "y": 700,
+        "wires": [
+            [
+                "c63bc10ea2375a72"
+            ]
+        ]
+    },
+    {
+        "id": "c63bc10ea2375a72",
+        "type": "debug",
+        "z": "b0f0000000000001",
+        "name": "Status Scrittura",
+        "active": true,
+        "tosidebar": true,
+        "complete": "statusCode",
+        "x": 1930,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "7a8383fb3e60c2f5",
+        "type": "MSSQL",
+        "z": "b0f0000000000001",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Raw Data 2h",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT\n    DateTime,\n    TRY_CAST(\n        REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.')\n    AS FLOAT) * 2 AS ValoreDiametro\nFROM DataAnalysis\nWHERE ReceiptName = '{{{global.ricetta}}}'\n  AND DateTime >= DATEADD(HOUR, -2, GETDATE())\n  AND TRY_CAST(REPLACE(REPLACE(REPLACE(SingleAvgFeature2,'$',''),'#',''),',','.') AS FLOAT) > 0\nORDER BY DateTime ASC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 450,
+        "y": 700,
+        "wires": [
+            [
+                "71be55def0b98ee3"
+            ]
+        ]
+    },
+    {
+        "id": "82e923813501abf6",
+        "type": "inject",
+        "z": "b0f0000000000001",
+        "name": "Update Ricette ogni 10 min",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "600",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 420,
+        "y": 920,
+        "wires": [
+            [
+                "7447860e20f9bef8"
+            ]
+        ]
+    },
+    {
+        "id": "7447860e20f9bef8",
+        "type": "MSSQL",
+        "z": "b0f0000000000001",
+        "mssqlCN": "fad80af144686a98",
+        "name": "Leggi elenco ricette",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": 1,
+        "query": "SELECT DISTINCT ReceiptName FROM DataAnalysis ORDER BY ReceiptName ASC",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "x": 670,
+        "y": 920,
+        "wires": [
+            [
+                "9597e25d3041b766",
+                "fcd63d216b82fdd5"
+            ]
+        ]
+    },
+    {
+        "id": "9597e25d3041b766",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Format Line Protocol",
+        "func": "//---------------------------------------------------------\n//  Scrive ricette in InfluxDB usando timestamp fisso (ms)\n//  NESSUN DUPLICATO — Influx fa upsert grazie allo stesso\n//  measurement + tag + timestamp\n//---------------------------------------------------------\n\nlet fixedTimestamp = 1704067200000;\n// 2024-01-01T00:00:00Z in MILLISECONDI\n\nlet lines = msg.payload.map(r => {\n    let name = r.ReceiptName\n        .replace(/ /g, \"\\\\ \")\n        .replace(/,/g, \"\\\\,\")\n        .replace(/=/g, \"\\\\=\");\n\n    return `ricette,name=${name} value=1 ${fixedTimestamp}`;\n});\n\nmsg.payload = lines.join(\"\\n\");\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 920,
+        "wires": [
+            [
+                "9d4e1e0e29595575",
+                "0422d74b2eeb2a37"
+            ]
+        ]
+    },
+    {
+        "id": "9d4e1e0e29595575",
+        "type": "http request",
+        "z": "b0f0000000000001",
+        "name": "POST → InfluxDB 2.7 /api/v2/write",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://10.86.120.11:8086/api/v2/write?org=sensure&bucket=piadine&precision=ms",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Authorization",
+                "valueType": "other",
+                "valueValue": "Token jBG2Kccmt_K-vPIMKnev3Xp08M6mgAVAlbXZEJDvC_owBcdwp3r4Lie-a-6ZUSaxnNQxznl_Nf2gjGTpt1JOAw=="
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "text/plain; charset=utf-8"
+            }
+        ],
+        "x": 1190,
+        "y": 920,
+        "wires": [
+            [
+                "0422d74b2eeb2a37"
+            ]
+        ]
+    },
+    {
+        "id": "fcd63d216b82fdd5",
+        "type": "function",
+        "z": "b0f0000000000001",
+        "name": "Formatta Menu",
+        "func": "// Crea l'array per il menu a tendina Dashboard 2.0\nvar options = msg.payload.map(function(row) {\n    return {\n        label: row.ReceiptName,\n        value: row.ReceiptName\n    };\n});\n\n// Imposta le opzioni\nmsg.options = options;\n\n// Nessun default qui: la ricetta iniziale è gestita dalla logica AUTO\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 980,
+        "wires": [
+            [
+                "e85c9d84e9cdd328"
+            ]
+        ]
+    },
+    {
+        "id": "e85c9d84e9cdd328",
+        "type": "change",
+        "z": "b0f0000000000001",
+        "name": "Salva Variabile (Manuale)",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ricetta_user",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "manual_until",
+                "pt": "flow",
+                "to": "$millis() + 10*60*1000",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43297e1fac556fd3",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-mssql-plus": "0.13.1",
+            "@flowfuse/node-red-dashboard": "1.29.0",
+            "node-red-contrib-influxdb": "0.7.0"
+        }
+    }
+]
